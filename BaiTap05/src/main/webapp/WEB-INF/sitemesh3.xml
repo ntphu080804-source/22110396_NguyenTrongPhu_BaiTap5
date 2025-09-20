@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemesh>
-    <mapping decorator="/WEB-INF/decorators/main.jsp">
-        <pattern>/pages/*</pattern>
-    </mapping>
+    <!-- Layout web chung -->
+    <mapping path="/*" name="web" decorator="/WEB-INF/decorators/web.jsp"/>
+
+    <!-- Layout riêng cho admin -->
+    <mapping path="/admin/*" name="admin" decorator="/WEB-INF/decorators/admin.jsp"/>
+
+    <!-- Không áp dụng cho API -->
+    <mapping path="/api*" exclude="true"/>
 </sitemesh>
+

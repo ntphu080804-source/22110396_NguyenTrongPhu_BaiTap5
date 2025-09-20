@@ -4,16 +4,7 @@ public class User {
 
 	private String fullname;
 	private String phone;
-	private String avatar; // file name
-
-	public User() {
-	}
-
-	public User(String fullname, String phone, String avatar) {
-		this.fullname = fullname;
-		this.phone = phone;
-		this.avatar = avatar;
-	}
+	private String image;
 
 	public String getFullname() {
 		return fullname;
@@ -31,12 +22,12 @@ public class User {
 		this.phone = phone;
 	}
 
-	public String getAvatar() {
-		return avatar;
+	public String getImage() {
+		return image;
 	}
 
-	public void setAvatar(String avatar) {
-		this.avatar = avatar;
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 }
